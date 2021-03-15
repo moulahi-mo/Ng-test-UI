@@ -1,0 +1,32 @@
+.left-aside {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  .brand {
+    display: flex;
+    justify-content: space-evenly;
+
+    .logo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: -9px 8px 20px -18px;
+      align-self: start;
+    }
+    .brand-term {
+      align-self: start;
+      display: inline-block;
+      text-transform: capitalize;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: rebeccapurple;
+      letter-spacing: 0.1rem;
+      .underline-o {
+        text-decoration: underline;
+      }
+    }
+  }
+}
