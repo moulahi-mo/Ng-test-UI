@@ -9,9 +9,11 @@ import { HomeComponent } from './components/main/home/home.component';
 import { LeftSidenavComponent } from './components/left-sidenav/left-sidenav/left-sidenav.component';
 import { RightSidenavComponent } from './components/right-sidenav/right-sidenav/right-sidenav.component';
 import { NavStoriesComponent } from './components/main/nav-stories/nav-stories.component';
+import { MenuComponent } from './components/left-sidenav/menu/menu.component';
+import { AccountComponent } from './components/left-sidenav/account/account.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, HomeComponent, LeftSidenavComponent, RightSidenavComponent, NavStoriesComponent],
+  declarations: [AppComponent, PageNotFoundComponent, HomeComponent, LeftSidenavComponent, RightSidenavComponent, NavStoriesComponent, MenuComponent, AccountComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [LocalStorageService],
   bootstrap: [AppComponent],
