@@ -18,7 +18,8 @@ body {
   button,
   i,
   img,
-  [data-menu="menu-link"] {
+  [data-menu="menu-link"],
+  [data-link="link"] {
     cursor: pointer;
     outline: 0;
     border: 0;

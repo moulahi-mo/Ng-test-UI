@@ -2,30 +2,15 @@
   <section class="menu">
     <!-- ! home-->
     <h4 class="title">menu</h4>
-    <div data-menu="menu-link" class="menu-item active">
-      <i aria-hidden="true" data-icon="icon" class="fa fa-home"></i>
-      <h5 class="menu-item-name">home</h5>
-    </div>
-    <!-- ! messages-->
-    <div data-menu="menu-link" class="menu-item">
-      <i aria-hidden="true" data-icon="icon" class="fa fa-comment"></i>
-
-      <h5 class="menu-item-name">messages</h5>
-    </div>
-    <!-- ! profile-->
-    <div data-menu="menu-link" class="menu-item">
-      <i aria-hidden="true" data-icon="icon" class="fa fa-user"></i>
-      <h5 class="menu-item-name">profile</h5>
-    </div>
-    <!-- ! saved post-->
-    <div data-menu="menu-link" class="menu-item">
-      <i aria-hidden="true" data-icon="icon" class="fa fa-bookmark"></i>
-      <h5 class="menu-item-name">saved post</h5>
-    </div>
-    <!-- ! settings-->
-    <div data-menu="menu-link" class="menu-item">
-      <i aria-hidden="true" data-icon="icon" class="fa fa-cog"></i>
-      <h5 class="menu-item-name">settings</h5>
+    <div
+      (click)="VerifyClicks(i)"
+      data-menu="menu-link"
+      class="menu-item"
+      [ngClass]="{ active: item.isClicked }"
+      *ngFor="let item of menu; index as i"
+    >
+      <i aria-hidden="true" data-icon="icon" class="fa fa-home active"></i>
+      <h5 class="menu-item-name">{{ item.link }}</h5>
     </div>
   </section>
 </nav>
