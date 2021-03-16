@@ -4,7 +4,6 @@ export interface User {
   lastName: string;
   pseudo: string;
   picture: string;
-
   isActive: boolean;
   followers: number;
   following: number;
@@ -14,9 +13,13 @@ export interface User {
 
 export interface Feed {
   idf?: string;
-  title: string;
-  creator_firstName: string;
-  creator_lastName: string;
+  title?: string;
+  creator: {
+    uid?: string;
+    firstName: string;
+    lastName: string;
+    picture: string;
+  };
   image: string;
   likes: number;
   comments: number;

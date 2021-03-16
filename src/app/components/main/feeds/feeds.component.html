@@ -1,0 +1,42 @@
+<section class="feeds">
+  <!-- !  feeds navbar -->
+  <section class="feeds-header">
+    <h3>feeds</h3>
+
+    <ul class="feeds-filter">
+      <li>all</li>
+      <li>following</li>
+      <li>newest</li>
+      <li class="active">popular</li>
+    </ul>
+  </section>
+  <!-- !  feeds cards-->
+  <section class="feeds-cards">
+    <article class="card" *ngFor="let feed of feeds">
+      <img class="feed-img" [src]="feed.image" [alt]="feed.creator.lastName" />
+      <div class="feeds-infos">
+        <div class="feeds-author">
+          <img
+            class="author-img"
+            [src]="feed.creator.picture"
+            [alt]="feed.creator.firstName"
+          />
+          <h5 class="author-name">
+            {{ feed.creator.firstName | titlecase }}
+            {{ feed.creator.lastName | titlecase }}
+          </h5>
+        </div>
+        <div class="feeds-icons">
+          <div>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span> {{ feed.likes }} </span>
+          </div>
+          <div>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <span> {{ feed.comments }} </span>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+</section>
