@@ -5,7 +5,7 @@
   align-items: center;
   background-color: #f5f9ff63;
   margin-right: 10px;
-  .title {
+  .account-title {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -18,41 +18,43 @@
       margin-left: 10px;
     }
   }
-  .infos {
-    display: flex;
-
-    .pic {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    .details {
-      align-self: start;
+  .account-content {
+    .account-infos {
       display: flex;
-      flex-direction: column;
-      justify-content: stretch;
-      margin-left: 10px;
-      margin: 0;
-      h5 {
-        text-transform: capitalize;
-        margin: 0;
+
+      .account-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
       }
-      h6 {
-        color: grey;
-        margin-top: 0;
-        display: block;
+      .account-details {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        margin-left: 10px;
+        margin: 0;
+        h5 {
+          // text-transform: capitalize;
+          margin: 0;
+        }
+        h6 {
+          color: grey;
+          margin-top: 0;
+          display: block;
+        }
       }
     }
-  }
-  .banner {
-    .banner-image {
-      width: 126px;
-      height: 173px;
-      border-radius: 20px;
-      border: 3px solid #fff;
-      outline: 0;
-      box-shadow: -10px 12px 20px -16px;
+    .account-banner {
+      .banner-image {
+        width: 126px;
+        height: 173px;
+        border-radius: 20px;
+        border: 3px solid #fff;
+        outline: 0;
+        box-shadow: -10px 12px 20px -16px;
+      }
     }
   }
 }

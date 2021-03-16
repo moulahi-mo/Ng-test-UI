@@ -1,0 +1,16 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  .footer-link,
+  .footer-separator {
+    font-size: 0.8rem;
+    color: rgba($color: grey, $alpha: 0.6);
+    font-weight: 300;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  //   .footer-separator {
+
+  // }
+}

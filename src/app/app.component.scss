@@ -3,9 +3,14 @@
   width: 100vw;
   display: flex;
   justify-content: space-between;
-
+  .right-sidenav,
+  .left-sidenav {
+    height: 100vh;
+  }
   .left-sidenav {
     width: 300px;
-    height: 100vh;
+  }
+  .right-sidenav {
+    width: 350px;
   }
 }

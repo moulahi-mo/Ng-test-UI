@@ -1,43 +1,12 @@
-//! variable
-$color: #8c51ec;
-
-.left-aside {
+.left-sidenav {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #fff;
-  .brand {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin-top: 20px;
 
-    .logo {
-      width: 50px;
-      height: 45px;
-      border-radius: 50%;
-      box-shadow: -10px 12px 20px -16px;
-      align-self: start;
-      margin-right: 5px;
-    }
-    .brand-term {
-      margin-top: 0;
-      padding-top: 10px;
-      align-self: start;
-      font-weight: 900;
-      font-size: 1.1rem;
-      color: $color;
-      letter-spacing: 0.1rem;
-      margin-left: 5px;
-      .underline-o {
-        display: inline-block;
-        border-bottom: 2px solid $color;
-      }
-    }
-  }
+  app-brand,
   app-menu,
   app-account {
     width: 100%;

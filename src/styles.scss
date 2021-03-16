@@ -8,10 +8,20 @@ $secondary: #8c51ec;
 /*                   global styling                             */
 body {
   height: 100%;
-  width: 100;
+  width: 100%;
   box-sizing: border-box;
   background-color: $primary;
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  a,
+  button,
+  i,
+  img,
+  [data-menu="menu-link"] {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+  }
 }

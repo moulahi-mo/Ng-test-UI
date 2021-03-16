@@ -1,27 +1,25 @@
 <section class="account">
   <!-- ! title-->
-  <div class="title">
+  <div class="account-title">
     <h4>account</h4>
-    <i class="fa fa-chevron-down"></i>
+    <i (click)="toggle()" class="fa fa-chevron-down"></i>
   </div>
   <!-- ! infos-->
-  <div class="infos">
-    <img
-      class="pic"
-      src="../../../../assets/images/users/user-74.jpg"
-      alt="account-picture"
-    />
-    <div class="details">
-      <h5>michael</h5>
-      <h6>@michaelscofield</h6>
+  <div class="account-content" *ngIf="isShown">
+    <div class="account-infos">
+      <img class="account-pic" [src]="user.picture" [alt]="user.pseudo" />
+      <div class="account-details">
+        <h5>{{ user.firstName | titlecase }}</h5>
+        <h6>{{ user.pseudo }}</h6>
+      </div>
     </div>
-  </div>
-  <!-- ! banner-->
-  <div class="banner">
-    <img
-      src="../../../../assets/images/account-banner.png"
-      alt="cofeed-banner"
-      class="banner-image"
-    />
+    <!-- ! banner-->
+    <div class="account-banner">
+      <img
+        src="../../../../assets/images/account-banner.png"
+        alt="cofeed-banner"
+        class="banner-image"
+      />
+    </div>
   </div>
 </section>

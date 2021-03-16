@@ -1,0 +1,33 @@
+<section class="activity">
+  <h4 class="activity-title">latest post activity</h4>
+  <article class="activity-card">
+    <div class="activity-card-content">
+      <div class="activity-card-image-wrapper">
+        <img
+          class="activity-card-image"
+          [src]="post.image"
+          [alt]="post.title"
+        />
+      </div>
+
+      <div class="activity-card-infos">
+        <h5>{{ post.title | titlecase }}</h5>
+        <aside class="activity-card-icons">
+          <div>
+            <i class="fa fa-heart" aria-hidden="true"></i>
+            <span>{{ post.likes }}</span>
+          </div>
+          <div>
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <span>{{ post.comments }}</span>
+          </div>
+          <div>
+            <i class="fa fa-bookmark" aria-hidden="true"></i>
+            <span>{{ post.bookmark }}</span>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <h5 class="activity-card-footer">see all posts</h5>
+  </article>
+</section>

@@ -11,9 +11,14 @@ import { RightSidenavComponent } from './components/right-sidenav/right-sidenav/
 import { NavStoriesComponent } from './components/main/nav-stories/nav-stories.component';
 import { MenuComponent } from './components/left-sidenav/menu/menu.component';
 import { AccountComponent } from './components/left-sidenav/account/account.component';
+import { BrandComponent } from './components/left-sidenav/brand/brand.component';
+import { ToolboxComponent } from './components/right-sidenav/toolbox/toolbox.component';
+import { SuggestionsComponent } from './components/right-sidenav/suggestions/suggestions.component';
+import { LatestActivityComponent } from './components/right-sidenav/latest-activity/latest-activity.component';
+import { FooterComponent } from './components/right-sidenav/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, HomeComponent, LeftSidenavComponent, RightSidenavComponent, NavStoriesComponent, MenuComponent, AccountComponent],
+  declarations: [AppComponent, PageNotFoundComponent, HomeComponent, LeftSidenavComponent, RightSidenavComponent, NavStoriesComponent, MenuComponent, AccountComponent, BrandComponent, ToolboxComponent, SuggestionsComponent, LatestActivityComponent, FooterComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [LocalStorageService],
   bootstrap: [AppComponent],

@@ -1,0 +1,83 @@
+$color-accent: #8c51ec;
+
+.suggestions {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .suggestions-header,
+  .suggestions-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    p {
+      color: $color-accent;
+      margin-top: 20px;
+      margin-right: 50px;
+    }
+  }
+  .suggestions-header {
+    margin-bottom: 20px;
+  }
+  .suggestions-card {
+    justify-content: space-between;
+    margin: 5px 0;
+    .suggestions-infos {
+      display: flex;
+
+      .suggestions-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 3px solid #fff;
+      }
+      .suggestions-details {
+        align-self: start;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        margin-left: 10px;
+        margin: 0;
+        h5 {
+          margin: 0;
+        }
+        h6 {
+          color: grey;
+          margin-top: 0;
+          display: block;
+        }
+      }
+    }
+    .suggestions-follow {
+      align-self: flex-start;
+      padding: 7px 25px;
+      margin: 5px;
+      font-size: 0.8rem;
+      font-weight: normal;
+      border-radius: 10px;
+      text-transform: capitalize;
+      margin: 0 30px 0 0;
+      display: block;
+    }
+  }
+
+  .followed {
+    background-color: $color-accent;
+    color: #fff;
+  }
+  .notFollowed {
+    background-color: rgba($color: rgb(190, 188, 188), $alpha: 0.3);
+    color: #000;
+  }
+}
+// ! divider between the two sections
+.divider {
+  width: 75%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: rgba($color: grey, $alpha: 0.3);
+}

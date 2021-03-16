@@ -3,21 +3,21 @@
 
   <app-left-sidenav class="left-sidenav"></app-left-sidenav>
 
-  <!----->
+  <!-- ! Main Content Start--->
 
   <main>
     <!--*  ( Following stories )--->
-    <nav>
-      <app-nav-stories></app-nav-stories>
-    </nav>
+
+    <app-nav-stories class="stories"></app-nav-stories>
+
     <!--* Main content ( Feeds .. )--->
-    <section>
-      <router-outlet></router-outlet>
-    </section>
+
+    <router-outlet></router-outlet>
   </main>
 
+  <!-- ! Main Content End --->
+
   <!--* Right Sidenav ( Search bar / latest / suggestions )--->
-  <aside>
-    <app-right-sidenav></app-right-sidenav>
-  </aside>
+
+  <app-right-sidenav class="right-sidenav"></app-right-sidenav>
 </div>

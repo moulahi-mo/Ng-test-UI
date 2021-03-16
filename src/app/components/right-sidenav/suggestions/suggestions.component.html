@@ -1,0 +1,28 @@
+<section class="suggestions">
+  <header class="suggestions-header">
+    <h4>suggestions for you</h4>
+    <p>see all</p>
+  </header>
+  <div class="suggestions-card" *ngFor="let user of users">
+    <div class="suggestions-infos">
+      <img class="suggestions-pic" [src]="user.picture" [alt]="user.pseudo" />
+      <div class="suggestions-details">
+        <h5>
+          {{ user.firstName | titlecase }} {{ user.lastName | titlecase }}
+        </h5>
+        <h6>{{ user.pseudo }}</h6>
+      </div>
+    </div>
+
+    <button
+      (click)="user.isFollowed = !user.isFollowed"
+      data-follow="button"
+      class="suggestions-follow"
+      [ngClass]="!user.isFollowed ? 'followed' : 'notFollowed'"
+    >
+      {{ user.isFollowed ? "followed " : "follow" }}
+    </button>
+  </div>
+</section>
+<!--! Divider-->
+<div class="divider"></div>
