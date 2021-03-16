@@ -1,0 +1,72 @@
+.stories {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+  .stories-current-user,
+  .stories-following {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .current-user-pic-wrapper,
+    .stories-following-pic-wrapper {
+      .current-user-pic,
+      .stories-following-pic {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+      }
+    }
+    .current-user-pic-wrapper {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      top: 0;
+      left: 0;
+      margin-top: 6px;
+      border-radius: 50%;
+      background: rgba($color: #8c51ec, $alpha: 0.6);
+      cursor: pointer;
+      .current-user-pic-plus {
+        position: relative;
+        width: 5px;
+        height: 5px;
+        top: 14px;
+        left: 23px;
+        display: block;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: normal;
+      }
+      .current-user-pic {
+        border: 3px solid #a4b6e1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: -3px;
+        left: -3px;
+        z-index: -10;
+      }
+    }
+    .current-user-name {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+}
+//! binding classes as on isActive state
+.isActive {
+  border: 4px solid #a4b6e1;
+}
+.isInActive {
+  border: 4px solid #8c51ec;
+}
+
+// ! divider between header and main
+.divider {
+  width: 95%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: rgba($color: grey, $alpha: 0.3);
+}

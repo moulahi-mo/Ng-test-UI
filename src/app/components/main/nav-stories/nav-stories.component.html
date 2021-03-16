@@ -1,1 +1,29 @@
-<p>nav-stories works!</p>
+<header class="stories">
+  <!-- * current user storyline  -->
+  <div class="stories-current-user">
+    <div class="current-user-pic-wrapper">
+      <span class="current-user-pic-plus">+</span>
+      <img
+        class="current-user-pic"
+        [src]="currUser.picture"
+        [alt]="currUser.pseudo"
+      />
+    </div>
+    <h5 class="current-user-name">{{ currUser.firstName | titlecase }}</h5>
+  </div>
+  <!-- *users Stories storyline  -->
+  <div class="stories-following" *ngFor="let user of following">
+    <div class="stories-following-pic-wrapper">
+      <img
+        [ngClass]="!user.isActive ? 'isActive' : 'isInActive'"
+        class="stories-following-pic"
+        [src]="user.picture"
+        [alt]="user.pseudo"
+      />
+    </div>
+
+    <h5 class="current-user-name">{{ user.firstName | titlecase }}</h5>
+  </div>
+</header>
+<!--! Divider-->
+<div class="divider"></div>

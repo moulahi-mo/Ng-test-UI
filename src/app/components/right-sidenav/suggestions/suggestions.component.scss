@@ -13,14 +13,14 @@ $color-accent: #8c51ec;
     display: flex;
     justify-content: space-between;
     text-transform: capitalize;
-    p {
+  }
+  .suggestions-header {
+    margin-bottom: 20px;
+    h5 {
       color: $color-accent;
       margin-top: 20px;
       margin-right: 50px;
     }
-  }
-  .suggestions-header {
-    margin-bottom: 20px;
   }
   .suggestions-card {
     justify-content: space-between;

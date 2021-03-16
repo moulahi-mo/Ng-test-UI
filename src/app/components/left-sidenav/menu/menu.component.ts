@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 interface Menu {
   link: string;
+  icon: string;
   isClicked: boolean;
 }
 
@@ -17,11 +18,11 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     this.menu = [
-      { link: 'home', isClicked: true },
-      { link: 'messages', isClicked: false },
-      { link: 'profile', isClicked: false },
-      { link: 'saved post', isClicked: false },
-      { link: 'settings', isClicked: false },
+      { link: 'home', icon: 'fa-home', isClicked: true },
+      { link: 'messages', icon: 'fa-comment', isClicked: false },
+      { link: 'profile', icon: 'fa-user', isClicked: false },
+      { link: 'saved post', icon: 'fa-bookmark', isClicked: false },
+      { link: 'settings', icon: 'fa-cog', isClicked: false },
     ];
   }
   // ! function that's allow:  exact selection of one link at time by adding active class

@@ -9,7 +9,12 @@
       [ngClass]="{ active: item.isClicked }"
       *ngFor="let item of menu; index as i"
     >
-      <i aria-hidden="true" data-icon="icon" class="fa fa-home active"></i>
+      <i
+        aria-hidden="true"
+        data-icon="icon"
+        class="fa active"
+        [ngClass]="item.icon"
+      ></i>
       <h5 class="menu-item-name">{{ item.link }}</h5>
     </div>
   </section>
