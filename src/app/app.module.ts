@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,8 +20,23 @@ import { FooterComponent } from './components/right-sidenav/footer/footer.compon
 import { FeedsComponent } from './components/main/feeds/feeds.component';
 
 @NgModule({
-  declarations: [AppComponent, PageNotFoundComponent, HomeComponent, LeftSidenavComponent, RightSidenavComponent, NavStoriesComponent, MenuComponent, AccountComponent, BrandComponent, ToolboxComponent, SuggestionsComponent, LatestActivityComponent, FooterComponent, FeedsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [
+    AppComponent,
+    PageNotFoundComponent,
+    HomeComponent,
+    LeftSidenavComponent,
+    RightSidenavComponent,
+    NavStoriesComponent,
+    MenuComponent,
+    AccountComponent,
+    BrandComponent,
+    ToolboxComponent,
+    SuggestionsComponent,
+    LatestActivityComponent,
+    FooterComponent,
+    FeedsComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [LocalStorageService],
   bootstrap: [AppComponent],
 })

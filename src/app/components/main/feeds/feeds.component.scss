@@ -39,7 +39,7 @@
       display: flex;
       flex-direction: column;
       .feed-img {
-        border-radius: 10px;
+        border-radius: 15px;
         border: 4px solid #fff;
         box-shadow: -10px 12px 20px -16px;
         width: 310px;
@@ -75,6 +75,12 @@
             color: #a4b6e1;
             margin-left: 5px;
             font-size: 0.8rem;
+          }
+          .fa-heart {
+            transition: transform 0.3s ease;
+            &:hover {
+              transform: scale(0.95, 0.95);
+            }
           }
         }
       }

@@ -28,8 +28,18 @@
         </div>
         <div class="feeds-icons">
           <div>
-            <i class="fa fa-heart" aria-hidden="true"></i>
-            <span> {{ feed.likes }} </span>
+            <i
+              [ngStyle]="{ color: feed.isLiked ? 'red' : '' }"
+              (click)="onIncrement(feed)"
+              class="fa fa-heart"
+              aria-hidden="true"
+            ></i>
+            <span
+              class="heart"
+              [ngStyle]="{ color: feed.isLiked ? 'red' : '' }"
+            >
+              {{ feed.likes }}
+            </span>
           </div>
           <div>
             <i class="fa fa-comments" aria-hidden="true"></i>

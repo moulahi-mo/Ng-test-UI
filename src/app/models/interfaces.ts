@@ -12,7 +12,7 @@ export interface User {
 }
 
 export interface Feed {
-  idf?: string;
+  id?: string;
   title?: string;
   creator: {
     uid?: string;
@@ -23,6 +23,7 @@ export interface Feed {
   image: string;
   likes: number;
   comments: number;
+  isLiked: boolean;
 }
 
 export interface Post {
@@ -33,3 +34,9 @@ export interface Post {
   comments: number;
   image: string;
 }
+
+export type LikesFeed = {
+  id: string;
+  likes: number;
+  isLiked: boolean;
+};
